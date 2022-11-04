@@ -67,6 +67,7 @@ if (mysqli_num_rows($result) > 0) {
 
 </html>
 
+<!-- /* A jQuery function that is executed when the button is clicked. */ -->
 
 <script type="text/javascript">
 	$(document).ready(function() {
