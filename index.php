@@ -4,6 +4,7 @@ require_once "clases/Conexion.php";
 $obj = new conectar();
 $conexion = $obj->conexion();
 
+/* Checking if the user is already registered. */
 $sql = "SELECT * from usuarios where email='admin'";
 $result = mysqli_query($conexion, $sql);
 $validar = 0;
@@ -27,7 +28,6 @@ if (mysqli_num_rows($result) > 0) {
 	<script src="js/funciones.js"></script>
 	
 </head>
-
 <body style="background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(img/fondo.jpg); background-position: center; background-size: cover;">
 	<br><br><br>
 	<div class="container rounded ">
@@ -66,6 +66,7 @@ if (mysqli_num_rows($result) > 0) {
 </body>
 
 </html>
+
 
 <script type="text/javascript">
 	$(document).ready(function() {
