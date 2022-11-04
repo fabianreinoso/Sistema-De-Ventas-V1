@@ -1,7 +1,7 @@
 <?php 
-$contrasena = ""; //h%7E5qM^Bh8!
-$usuario = "root"; // grupo7
-$nombre_bd = "sistema_ventas"; //grupo7
+$contrasena = "h%7E5qM^Bh8!"; //h%7E5qM^Bh8!
+$usuario = "grupo7"; // grupo7
+$nombre_bd = "grupo7"; //grupo7
 
 try {
 	$bd = new PDO (
